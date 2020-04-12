@@ -79,7 +79,8 @@ jobs:
       run: |
        cd openwrt/package/lean
        git clone https://github.com/HDragon8/luci-theme-noodles
-       git clone https://github.com/HDragon8/luci-theme-argon-noodles 
+       git clone https://github.com/HDragon8/luci-theme-argon-noodles
+       git clone https://github.com/HDragon8/luci-theme-noodlesPurple 
       
 #    - name: index添加天气
 #      run: cd openwrt && git clone https://github.com/HDragon8/noodlesindex      
