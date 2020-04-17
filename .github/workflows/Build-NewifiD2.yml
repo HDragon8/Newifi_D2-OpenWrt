@@ -63,11 +63,12 @@ jobs:
     - name: 同步源码
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
-    - name: Update feeds
-      run: cd openwrt && ./scripts/feeds update -a
-
-    - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
+    - name: Update and install feeds
+      run: |
+       cd openwrt
+       sed -i '5s/#src-git/src-git/g' feeds.conf.default
+       ./scripts/feeds update -a
+       ./scripts/feeds install -a
 
     - name: 应用限制/微信推送
       run: |
