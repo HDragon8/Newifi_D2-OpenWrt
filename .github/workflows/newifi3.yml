@@ -14,11 +14,11 @@ on:
   repository_dispatch:
   release:
     types: published
-  push:
-    branches:
-      - master
-    paths:
-      - 'newifi3.config'
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - 'newifi3.config'
 #  schedule:
 #    - cron: 0 8 * * 5
   watch:
