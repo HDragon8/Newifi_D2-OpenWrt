@@ -21,7 +21,7 @@ sed -i 's/OpenWrt/noodles/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # Modify the version number
 #sed -i 's/OpenWrt/noodles @ $(date "+%Y.%m.%d") build noodles OpenWrt/g' package/lean/default-settings/files/zzz-default-settings
-sed -i 's/OpenWrt/noodles/g' package/default-settings/files/zzz-default-settings
+#sed -i 's/OpenWrt/noodles/g' package/default-settings/files/zzz-default-settings
 sed -i 's/SNAPSHOT/noodles @ $(date "+%Y.%m.%d") /g' package/default-settings/files/zzz-default-settings
 
 
